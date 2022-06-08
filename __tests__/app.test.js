@@ -3,7 +3,6 @@ const setup = require('../data/setup');
 const request = require('supertest');
 const app = require('../lib/app');
 
-// const { cats } = require('../data/cats');
 const Cat = require('../lib/models/CartoonCat');
 
 describe('cats routes', () => {
