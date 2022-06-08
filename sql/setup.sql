@@ -6,7 +6,11 @@ DROP table if exists cats;
 CREATE table cats (
     id BIGINT GENERATED ALWAYS AS IDENTITY,
     name VARCHAR NOT NULL,
-    age INT NOT NULL
+    type VARCHAR NOT NULL,
+    url VARCHAR,
+    year INT NOT NULL,
+    lives INT NOT NULL,
+    isSidekick BOOLEAN
 );
 
 INSERT INTO cats (name, type, url, year, lives, isSidekick) VALUES
